@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
     s.source            = { :path => 'SDK/0.1/IntelligenceSDK.framework'}
 
 
-    s.ios.deployment_target = '7.0'
+    s.ios.deployment_target = '8.0'
     s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
     s.ios.vendored_frameworks = 'SDK/0.1/IntelligenceSDK.framework'
 
