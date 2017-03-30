@@ -3,16 +3,18 @@ Pod::Spec.new do |s|
     s.name              = 'IntelligenceSDK'
     s.version           = '0.0.1'
     s.summary           = 'A really cool SDK that logs stuff.'
-    s.homepage          = 'http://tigerspike.com/'
+    s.homepage         =  'https://github.com/tigerspike/Intelligence-iOS-SDK'
 
-    s.author            = { 'Name' => 'sdk@example.com' }
-    s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
+    s.author           = { 'Chethan' => 'Chethan.palaksha@tigerspike.com' }
+    s.license          = { :type => 'MIT', :file => 'LICENSE' }
+
 
     s.platform          = :ios
-    s.source            = { :http => 'https://github.com/chethansp007/Intelligence-iOS-SDK-Pod/blob/master/SDK/0.1/IntelligenceSDK.zip?raw=true'}
+    s.source            = { :path => 'SDK/0.1/IntelligenceSDK.framework'}
 
 
     s.ios.deployment_target = '7.0'
-    s.ios.vendored_frameworks = 'IntelligenceSDK.framework'
+    s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3' }
+    s.ios.vendored_frameworks = 'SDK/0.1/IntelligenceSDK.framework'
 
 end 
